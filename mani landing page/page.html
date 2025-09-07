@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mani's Landing Page</title>
+  <link rel="stylesheet" href="page.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo" data-aos="fade-right">Mani<span>Web</span></div>
+      <ul class="nav-links" data-aos="fade-left">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content" data-aos="zoom-in">
+      <h1>Welcome to <span>My World</span></h1>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Crafting modern, responsive, and interactive websites.
+      </p>
+      <a href="#contact" class="btn" data-aos="flip-up" data-aos-delay="400">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features" data-aos="fade-up">
+    <h2>Features</h2>
+    <div class="feature-container">
+      <div class="feature-box" data-aos="zoom-in">⚡ Fast Performance</div>
+      <div class="feature-box" data-aos="zoom-in" data-aos-delay="200">📱 Mobile Friendly</div>
+      <div class="feature-box" data-aos="zoom-in" data-aos-delay="400">🎨 Stylish Design</div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p data-aos="fade-up" data-aos-delay="200">
+      Hi, I’m Mani 👋 Passionate about web development and creating stylish,
+      user-friendly websites. Always learning, building, and experimenting with new tech.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact" data-aos="fade-left">
+    <h2>Contact Me</h2>
+    <form id="contactForm" data-aos="zoom-in">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    <p>© 2025 ManiWeb | All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="page.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Animation duration
+      once: true,     // Run animation only once
+    });
+  </script>
+</body>
+</html>
